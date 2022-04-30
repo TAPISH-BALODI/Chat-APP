@@ -1,0 +1,56 @@
+.heading{
+    display: block;
+   text-align: center;
+   background-color:aquamarine ;
+}
+.container{
+    height: 31em;
+    background-color: aqua;
+}
+.footernav{
+    background-color: rgb(54, 52, 52);
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+.footerbody{
+    background-color:rgb(54, 52, 52);
+    border: 1px solid white;
+
+}
+.footerbottom{
+    background-color: rgb(54, 52, 52);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+
+}
+.inputtext{
+    width:113em;
+    height: 2em;
+    background-color: rgb(54, 52, 52);
+    border: 1px solid white;
+}
+.footnavelements{
+  display: flex;
+  margin-right: 1em;
+  
+  
+}
+.footbottomelements{
+   
+    border-bottom: 1rem;
+    display: flex;
+}
+.button{
+    
+    background-color: rgb(53, 208, 53);
+    height: 2em;
+    width: 6em;
+    border-radius: 4rem;
+    
+}
+li{
+    color: rgb(212, 228, 241);
+    list-style-type: none;
+    margin-left: 1em;
+}
