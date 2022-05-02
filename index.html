@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat APP</title>
+    <script src="http://localhost:8000/socket.io/socket.io.js "></script>
     <script src="client/client.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +14,8 @@
             <h2 class="heading">Welcome to Chat App</h2>
     </nav>
     <div class="container">
-            chats display
+           <div class="messageleft">hi   </div> 
+           <div class="messageright">hello user </div> 
     </div>
     <div class="footernav">
         <ul class="footnavelements">
@@ -28,7 +30,8 @@
             <li>code block</li>
         </ul>
         <div class="footerbody">
-            <input class="inputtext" placeholder="Chat Comes here..."> </input>
+            <form action="#" id="send-container">
+            <input class="inputtext" id="messageInp" placeholder="Chat Comes here..."> </input>
             <div class="footerbottom">
                 <ul class="footbottomelements">
                     <li class="options">add</li>
@@ -37,6 +40,7 @@
                   
                 </ul>
                 <button class="button">send</button>
+            </form>
             </div>
         </div>
     </div>
