@@ -57,26 +57,25 @@ li{
     list-style-type: none;
     margin-left: 1em;
 }
-.messageright{
+.message {
     float: right;
     clear: both;
     font-size: 22px;
-    background-color: cadetblue;
+    background-color: rgb(205, 251, 253);
     width: 24%;
     border: 1px solid black;
     border-radius: 5px;
     padding-left: 5px;
     margin: 10px;
 }
-.messageleft{
+.right{
+    float: right;
+    clear: both;
+ 
+}
+.left{
     float: left;
     clear: both;
-    background-color: cadetblue;
-    margin: 30px;
-    font-size: 22px;
-    padding-left: 5px;
-    width: 24%;
-    border: 1px solid black;
-    border-radius: 5px;
+    
 
 }
