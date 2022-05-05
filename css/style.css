@@ -9,8 +9,12 @@
     overflow-y: auto;
     margin-bottom: 33px;
 }
+#editorbubble{
+    background-color: aqua;
+    height: 40em;
+}
 .footernav{
-    background-color: rgb(54, 52, 52);
+    background-color: rgb(93, 90, 90);
     border: 1px solid white;
     border-radius: 1rem;
 }
@@ -20,7 +24,7 @@
 
 }
 .footerbottom{
-    background-color: rgb(54, 52, 52);
+    background-color: rgb(93, 90, 90);
     display: flex;
     justify-content: space-between;
     border: 1px solid white;
@@ -32,6 +36,15 @@
     background-color: rgb(241, 205, 205);
     border: 1px solid white;
     font-family: sans-serif;
+}
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.strikethrough{
+    font-weight: bold;
 }
 .footnavelements{
   display: flex;
@@ -71,11 +84,15 @@ li{
 .right{
     float: right;
     clear: both;
- 
 }
 .left{
     float: left;
     clear: both;
-    
-
+}
+img{
+     max-width:1em;
+     max-height: 1em;
+}
+.click{
+    background-color: aliceblue;
 }

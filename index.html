@@ -4,44 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Chat APP</title>
     <script defer src="http://localhost:8000/socket.io/socket.io.js "></script>
     <script defer src="client/client.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="http://cdn.quilljs.com/1.1.3/quill.js"></script>
+    <script src="http://cdn.quilljs.com/1.1.3/quill.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link href="https://cdn.quilljs.com/1.1.3/quill.snow.css" rel="stylesheet">
 </head>
 <body>
     <nav>
             <h2 class="heading">Welcome to Chat App</h2>
     </nav>
-    <div class="container">
+    <div class="container"> </div>
+        <form action="#" id="send-container">
+        <div id="toolbar"></div>
+        <div id="editor"></div>
+        <button type="submit" class="button">send</button>
+        </form>
+
+
+        <script>
+            var toolbarOptions=[
+            [ 'bold','italic','strike','quote','code-block','link',{'list':'ordered'},{'list':'bullet'}] ]
         
-    </div>
-    <div class="footernav">
-        <ul class="footnavelements">
-            <li>B</li>
-            <li>I</li>
-            <li>Strike</li>
-            <li>Hype</li>
-            <li>bullet list</li>
-            <li>numbered list</li>
-            <li>blockquote</li>
-            <li>code snippet</li>
-            <li>code block</li>
-        </ul>
-        <div class="footerbody">
-            <form action="#" id="send-container">
-            <input class="inputtext" name="messageInp" id="messageInp" placeholder="Chat Comes here..."> </input>
-            <div class="footerbottom">
-                <ul class="footbottomelements">
-                    <li class="options">add</li>
-                    <li class="options">emoji</li>
-                    <li class="options">@</li>
-                  
-                </ul>
-                <button type="submit" class="button">send</button>
-            </form>
-            </div>
-        </div>
-    </div>
+            var quill=new Quill('#editor',{
+            modules:{
+                
+                toolbar:toolbarOptions
+            },
+            theme:"snow"
+        });
+
+       
+    </script>
 </body>
 </html>
